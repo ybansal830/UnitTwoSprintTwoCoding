@@ -4,16 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private EditText mEtOne;
+    private TextView mTvTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        mEtOne = findViewById(R.id.etOne);
-        mEtOne.setText(getIntent().getStringExtra("name"));
+        mTvTwo = findViewById(R.id.tvTwo);
+        mTvTwo.setText(getIntent().getStringExtra("name"));
     }
 }
